@@ -14,7 +14,7 @@ while (True):
             print("Sorry! Looks like you did not choose rock, paper, or scissors! Your selection", s, ", by default, does not beat my choice", c, "... you lose!")
             s = input("Please select a valid choice: 'rock', 'paper', or 'scissors' ").lower()
 
-    if(s == "rock" and c == "rock"):
+    if(s == c):
         print(f"You chose {s} and I chose {c}. Looks like we are in a stalemate!")
     elif (s == "rock" and c == "paper"):
         print(f"You chose {s} and I chose {c}. Looks I win!")
@@ -22,16 +22,12 @@ while (True):
         print(f"You chose {s} and I chose {c}. Looks like you win.")
     elif (s == "paper" and c == "rock"):
         print(f"You chose {s} and I chose {c}. Looks like you win.")
-    elif (s == "paper" and c =="paper"):
-        print(f"You chose {s} and I chose {c}. Looks like we are in a stalemate!")
     elif (s == "paper" and c =="scissors"):
         print(f"You chose {s} and I chose  {c}. Looks like I win")
     elif (s == "scissors" and c =="rock"):
         print(f"You chose {s} and I chose {c}. Looks like I win")
     elif (s == "scissors" and c =="paper"):
         print(f"You chose {s} and I chose {c}. Looks like you win")
-    elif (s == "scissors" and c == "scissors"):
-        print(f"You chose {s} and I chose {c}. Looks like we are in a stalemate")
 
     if(input('Would you like to play again? Y / N: ').lower() == "n"):
         print("Thanks for playing with me! Now exiting")
