@@ -11,7 +11,7 @@ while (True):
         if(s == "rock" or s == "paper" or s == "scissors"):
             break
         else:
-            print("Sorry! Looks like you did not choose rock, paper, or scissors! Your selection", s, ", by default, does not beat my choice", c, "... you lose!")
+            print("Sorry! Looks like you did not choose rock, paper, OR scissors! Your selection", s + ", by default, does not beat my choice", c + "... you lose!")
             s = input("Please select a valid choice: 'rock', 'paper', or 'scissors' ").lower()
 
     if(s == c):
